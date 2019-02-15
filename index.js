@@ -1,3 +1,5 @@
+// fetch polyfill required
+global.fetch = global.fetch || require('node-fetch')
 const ReactDOMServer = require('react-dom/server');
 
 async function getInitialState(opts) {
